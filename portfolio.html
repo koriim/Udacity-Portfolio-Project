@@ -1,0 +1,87 @@
+<!-- welcome to my portfolio html5 file i hope you enjoy it -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- use this three tags first in all pages -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- using the title tag to put page title -->
+        <title>Koriem Portfolio</title>
+        <!-- use this meta rags to put more info in the page -->
+        <meta name="description" content="Udacity FRONT-END Developer Nano Degree portfolio project " />
+        <meta name="keywords" content="Udacity, Portfolio, Project," />
+        <meta name="author" content="Ahmed Koriem" />
+        <!-- the style sheet link here -->
+        <link rel="stylesheet" type="text/css" href="css\desktop.css">
+        <!-- this is optional for small icon beside title -->
+        <link rel="shortcut icon" href="img/ai.jpg" />
+    </head>
+    <!-- all what you will see written here between the body tag -->
+    <body>
+        <!-- use the header tag for the upper section of the page like main name and navigations -->
+        <header class="header">
+            <section class="head">
+                <div class="logo">
+                    <img class="logoimg"src="img\html5.svg" alt="my logo">
+                </div>
+                <div class="pagename">
+                    <h1 class="name">
+                        AHMED KORIEM
+                    </h1>
+                    <h3 class="descrption">
+                        FRONT-END NINJA
+                    </h3>
+                </div>
+            </section>
+            <hr class="style">
+        </header>
+        <!-- the main tag used to put the main page content -->
+        <main>
+            <section class="mainimage">
+                <div class="image1">
+                    <!-- using the picture tag and srcset to use many images with differnt sizes 
+                        to make the page compatabile with many devisec -->
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img\egypt.jpg" class="image1">
+                        <source media="(min-width: 1024px)" srcset="img\egypt2.jpg" class="image1">
+                        <source media="(min-width: 720px)" srcset="img\egypt3.jpg" class="image1">
+                        <img src="img\egypt4.jpg" alt="My main image" class="image1">
+                    </picture>
+                </div>
+            </section>
+            <hr class="style">
+            <section class="feateredwork">
+                <div class="sectiontitle">
+                    <h2>
+                        Featured Work
+                    </h2>
+                </div>
+                <section class="f_prj">
+                    <div class="prj_sec">
+                        <img class="proj_image" src="img\ai.jpg" alt="my first project">
+                        <h2 class="prjtitle">Cat classifier</h2>
+                        <p class="prjtitle"><a href="https://www.linkedin.com/in/ahmed-ali-koriem-882a3214/">My LinkedIn profile</a></p>
+                    </div>
+                    <div class="prj_sec">
+                        <img class="proj_image" src="img\ai2.jpg" alt="my second project">
+                        <h2 class="prjtitle">Calculator</h2>
+                        <p class="prjtitle"><a href="https://www.linkedin.com/in/ahmed-ali-koriem-882a3214/">My LinkedIn profile</a></p>
+                    </div>
+                    <div class="prj_sec">
+                        <img class="proj_image" src="img\ai3.jpg" alt="my third project">
+                        <h2 class="prjtitle">Face Print</h2>
+                        <p class="prjtitle"><a href="https://www.linkedin.com/in/ahmed-ali-koriem-882a3214/">My LinkedIn profile</a></p>
+                    </div>
+                </section>
+            </section>   
+        </main>
+        <hr class="style">
+        <!-- the footer sectin used to put more info in the end of the page -->
+        <footer>
+            <div class="devloper">
+                <strong>BY Ahmed Koriem</strong>
+            </div>
+        </footer>
+    </body>
+</html>

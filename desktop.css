@@ -1,0 +1,266 @@
+﻿/* this is my style sheet for the porfolio site By Ahmed Koriem*/
+/* body & html for the common page styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0; 
+}
+
+/* if the site is big use "nav" to creat navigation bars and "asid" to creat side bars  */
+header, nav, footer, section, article, div {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.head {
+    background: #ffffffda; /* For browsers that do not support gradients */
+    background: linear-gradient(to bottom right, #e7e6e6e0, #ffffff); /* Standard gradients syntax (must be last) */
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5%;
+}
+
+/* for the logo section */
+.logo {
+    margin-right:auto;
+    min-width: 20%;
+}
+
+/* For the horizontal lines style */
+.hr_style {
+    border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+    height: 10px;
+}
+
+.logoimg {
+    width: 170px;
+}
+
+/* For the page main name and descrption section */
+.pagename {
+    float: left;
+    margin-left: auto;
+    min-width: 75%;   
+    text-align: right;
+    width: 50px;
+}
+
+.name {
+    color: #2d3c49;
+    font-size: 52px;
+    min-width: 50%;
+    padding-left: 5px;
+}
+
+.descrption {
+    color: #2d3c49;
+    font-size: 28px;
+    min-width: 50%;    
+    padding-left: 5px;    
+}
+
+.image1 {
+    max-height: 60vh;
+    width: 100%;
+}
+
+.f_prj {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* for the featured projects section */
+.prj_sec {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-width: 30%;
+    min-width: 200px;
+    margin: auto;
+    padding-left: 5px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.proj_image {
+    max-width: 100%;
+}
+
+/* using hover to make good interaction */
+.prj_sec:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.sectiontitle {
+    color: #7d97ad;
+    font-size: 50px;
+}
+
+.devloper {
+    float: left;
+    min-width: 60%;
+    margin-right: auto;
+    padding-left: 20px;
+}
+
+/* for the very small devices use @media */
+@media screen and (max-width: 479px) {
+    body {
+        max-width: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .logo {
+        min-width: 60%;
+        padding-left: 20%;
+        padding-right: 20%;        
+    }
+
+    .logoimg {
+        max-width: 300px;
+        max-height: 100px;
+        position: relative;
+        width: 100%;
+    }
+
+    .pagename {
+        float: left;
+        margin-left: auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .name {
+        font-size: 24px;
+        min-width: 50%;
+        padding-left: 5px;
+    }
+
+    .descrption {
+        font-size: 16px;
+        min-width: 50%;
+        padding-left: 5px;    
+    }
+
+    .sectiontitle {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .prj_sec {
+        text-align: center;
+    }
+
+    .prjtitle {
+        font-size: 100%;
+    }
+
+}
+
+/* another @media condtion  */
+@media screen and (min-width: 480px) and (max-width: 720px) {
+    body {
+        max-width: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .name {
+        font-size: 32px;
+        min-width: 50%;
+    }
+
+    .descrption {
+        font-size: 18px;
+        min-width: 50%;    
+    }
+
+    .logo {
+        min-width: 25%;
+        padding-right: auto;        
+    }
+
+    .logoimg {
+        width: 100px;
+    }
+
+    .sectiontitle {
+        font-size: 28px;
+    }
+
+}
+
+/* another @media condtion  */
+@media screen and (min-width: 720px) and (max-width: 1200px) {
+    body {
+        max-width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .name {
+        font-size: 36px;
+        min-width: 50%;
+    }
+
+    .descrption {
+        font-size: 24px;
+        min-width: 50%;    
+    }
+
+    .logo {
+        min-width: 25%;
+        padding-right: auto;
+    }
+
+    .logoimg {
+        width: 150px;
+    }
+
+    .sectiontitle {
+        font-size: 36px;
+    }
+
+}
+
+/* another @media condtion  */
+@media screen and (min-width: 1200px) {
+    body {
+        max-width: 100%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .name {
+        font-size: 56px;
+        min-width: 50%;
+    }
+
+    .descrption {
+        font-size: 32px;
+        min-width: 50%;    
+    }
+
+    .logo {
+        min-width: 25%;
+        padding-right: auto;
+    }
+
+    .logoimg {
+        width: 180px;
+    }
+
+    .sectiontitle {
+        font-size: 48px;
+    }
+
+}
